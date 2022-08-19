@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Prints list of items in current directory
+list="$(ls ./*)"
+for i in "$list";
+do
+     echo "$i"
+done
