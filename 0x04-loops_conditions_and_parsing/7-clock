@@ -5,7 +5,7 @@ j="0"
 while (( i < 13 ));
 do
      echo "Hour: $i"
-     while (( j < 60));
+     while (( j < 59));
      do
           j=$((j+1))
           echo $j
