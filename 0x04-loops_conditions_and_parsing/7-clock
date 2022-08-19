@@ -2,7 +2,7 @@
 #This script prints "Best School"
 i="0"
 j="0"
-while (( i < 12 ));
+while (( i < 13 ));
 do
      echo "Hour: $i"
      while (( j < 60));
