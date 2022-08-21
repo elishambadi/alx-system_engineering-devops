@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#Displays all processes
 ps aux --sort user | grep bash
 # shellcheck disable=SC2009
