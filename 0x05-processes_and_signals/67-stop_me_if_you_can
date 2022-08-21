@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Kills a process 7
+id=$(pgrep -f './7-highlander')
+kill $id
