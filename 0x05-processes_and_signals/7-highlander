@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Display To 'Infinity and Beyond' until CTRL+C
-trap "{ echo 'I am invincible'; }" 15
+trap "{ echo 'I am invincible!!!'; }" 15
 n=1
 while (( n == 1));
 do
