@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+list=$(pgrep bash)
+
+IFS=' '
+
+read -ra arr <<< "$list"
+
+for val in "${arr[@]}"
+do
+   printf "%s bash\n" "$val"
+done
