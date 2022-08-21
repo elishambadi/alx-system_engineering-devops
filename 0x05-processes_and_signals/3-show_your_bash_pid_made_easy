@@ -1,4 +1,5 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+#Show bash processes
 list=$(pgrep bash)
 
 IFS=' '
