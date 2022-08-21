@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Display To 'Infinity and Beyond' until CTRL+C
+trap 2
+n=1
+while (( n == 1));
+do
+   echo "To infinity and beyond"
+   sleep 2
+done
