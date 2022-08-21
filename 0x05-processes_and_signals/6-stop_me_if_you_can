@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+#Kills a process
+pkill bash
