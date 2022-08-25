@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Displays all ipv4 ips
+nc -l localhost 98
