@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+pidlist=$(pgrep bash)
+readarray -d -t pids <<< "$pidlist"
+for (( n=0; n<${#pids[*]}; n++))
+do
+   echo "${pids[n]}"
+   echo "bash"
+done

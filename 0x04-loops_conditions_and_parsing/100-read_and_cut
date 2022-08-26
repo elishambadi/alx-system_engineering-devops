@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Print content of /etc/password
+file=$(cat /etc/passwd)
+read $file
