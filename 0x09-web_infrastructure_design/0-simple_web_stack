@@ -1,0 +1,15 @@
+Task 0
+
+A server is a machine/software that provides resources to one or more client machines in a request-response manner.
+
+The domain name makes it easier to locate the server on the web.
+
+www is an A record that matches a domain name to an IP address.
+
+Web server provides access to server from the web. Application server runs the application e.g. if it's a framework like Django. Database stores and performs poerations on data.
+
+Server uses http or https to communicate with computers requesting website.
+
+ISSUES
+SPOF because there is only one server.
+Maintenance can also lead to downtime due to lack of backup server.
