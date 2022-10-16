@@ -1,13 +1,13 @@
-# Configuring an ssh file
+# Configuring an ssh client
 
-file { 'ssh-config':
-    path    => '/home/elisha/.ssh/school',
-    content => "Host 37706-web-01 
-                Hostname 44.192.18.225
-		User ubuntu
-                PubKeyAuthentication yes
-                IdentityFile ~/.ssh/school
-                PasswordAuthentication no
-               "
+file_line { 'Turn off passwd auth':
+   ensure => 'created',
+   path => '/home/ubuntu/.ssh/school',
+   line => 'PasswordAuthentication no'
+}
 
+file_line { 'Declare identity file':
+   ensure => 'created',
+   path => '/home/ubuntu/.ssh/school',
+   line => 'IdentityFile "/home/ubuntu/.ssh/school"'
 }
