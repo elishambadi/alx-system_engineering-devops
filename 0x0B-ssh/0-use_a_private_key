@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-ssh -A ubuntu@3.237.43.71
+#Connect to server using ssh
+ssh ubuntu@3.237.43.71
