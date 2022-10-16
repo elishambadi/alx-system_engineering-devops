@@ -1,2 +1,7 @@
-#!/usr/bin/env bash
 #Editing the config file
+Host 37706-web-01
+Hostname 44.192.18.225
+User ubuntu
+PubKeyAuthentication yes
+IdentityFile ~/.ssh/school
+PasswordAuthentication no
