@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A script to install and configure nginx
+sudo apt-get upgrade
+sudo apt-get upgrade
+sudo apt-get install nginx
+# nginx is installed now configuring files
+
+sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
