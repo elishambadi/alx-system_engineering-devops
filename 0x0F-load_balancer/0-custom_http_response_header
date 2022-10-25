@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # A script to install and configure nginx
-sudo apt-get upgrade
-sudo apt-get upgrade
-sudo apt-get install nginx
+sudo apt-get upgrade -y
+sudo apt-get upgrade -y
+sudo apt-get install -y nginx
 # nginx is installed now configuring files
 
 sudo sed -i "16 i add_header X-Served-By "$(hostname)";" /etc/nginx/nginx.conf

@@ -1,0 +1,8 @@
+#!/bin/bash
+# Install and configure HAProxy with web-01 and web-02 servers
+sudo apt-get install --no-install-recommends software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-2.6
+
+sudo apt-get install haproxy
+
+
