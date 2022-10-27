@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # Fix nginx port 80 to 8080
-sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx restart
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+service nginx start
