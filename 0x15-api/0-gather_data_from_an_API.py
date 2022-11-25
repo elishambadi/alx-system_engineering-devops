@@ -6,10 +6,10 @@
 """
 
 if __name__ == "__main__":
-    import urllib.request
-    import urllib.parse
     import json
     import sys
+    import urllib.request
+    import urllib.parse
 
     id = sys.argv[1]
     name = ""
@@ -21,7 +21,6 @@ if __name__ == "__main__":
             html = html.decode('utf-8')
             html = json.loads(html)
             name = html.get('name')
-            print(name)
     except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
 
@@ -38,7 +37,7 @@ if __name__ == "__main__":
                 if html[i].get('completed') is True:
                     counter = counter + 1
                     tasks.append(html[i].get('title'))
-            print("Employee {} is done with tasks({}/{})".format(name,
+            print("Employee {} is done with tasks({}/{}):".format(name,
                                                                  counter,
                                                                  len(html)))
 
