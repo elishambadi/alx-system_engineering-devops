@@ -8,8 +8,8 @@
 if __name__ == "__main__":
     import json
     import sys
-    import urllib.request
     import urllib.parse
+    import urllib.request
 
     id = sys.argv[1]
     name = ""
