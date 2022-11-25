@@ -39,7 +39,7 @@ if __name__ == "__main__":
                     counter = counter + 1
                     tasks.append(html[i].get('title'))
             print("Employee {} is done with tasks({}/{})".format(name,
-                                                                 counter
+                                                                 counter,
                                                                  len(html)))
 
             # Print tasks
