@@ -1,0 +1,1 @@
+# Confirguring nginx, gunicorn
