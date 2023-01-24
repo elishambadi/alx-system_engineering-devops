@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-#Print content of /etc/password
-file=$(cat /etc/passwd)
-read $file
+# Print content of etc/passwd
+
+file="/etc/passwd"
+
+while IFS= read -r line; do
+  echo "$line" | cut -d ':' -f1,3,6
+done < "$file"
